@@ -1,0 +1,14 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Comparativa de algoritmos de reconstrucción en el problema inverso de EIT.}
+  \label{tab:inverse_algorithms}
+  \begin{tabular}{p{3.0cm} p{3.2cm} p{4.2cm} p{3.2cm} p{3.2cm}}
+    \hline\hline
+    \textbf{Familia de Métodos} & \textbf{Algoritmo Representativo} & \textbf{Principio Matemático} & \textbf{Ventajas Principales} & \textbf{Desventajas / Costo Computacional} \\ \hline
+    Métodos Directos No Iterativos & Algoritmo D-bar (Nachman, Siltanen) & Transformada no lineal dispersa y ecuación $\bar{\partial}$ en el plano complejo & Garantía de convergencia global sin estancamiento en mínimos locales; robusto. & Exige frontera estrictamente regular y alta densidad de electrodos; matemático complejo. \\ \hline
+    Mínimos Cuadrados Regularizados & Gauss-Newton con Tikhonov (Este trabajo) & Linearización sucesiva: $(A^T A + \alpha I) \delta\gamma = A^T b$, con Jacobiano adjunto & Convergencia cuadrática local rápida; integración natural con FEM FEniCS. & Sensible al parámetro $\alpha$; costo $O(N_{\text{iter}} \times \text{solve directos})$. \\ \hline
+    Métodos de Región de Confianza & Levenberg-Marquardt amortiguado & Interpolación dinámica entre descenso de gradiente y Gauss-Newton vía $\mu_k$ & Mayor radio de convergencia ante estimaciones iniciales lejanas al óptimo. & Requiere heurística de actualización de amortiguamiento en cada iteración. \\ \hline
+    Aprendizaje Profundo / Redes & PINNs (Physics-Informed Neural Networks) & Aproximación universal de $\sigma$ y $u$ minimizando el residuo de la EDP en pérdida & Sin malla explícita; capacidad de incorporar datos ruidosos heterogéneos. & Entrenamiento costoso; baja reproducibilidad exacta y falta de cotas analíticas. \\ \hline
+    \hline\hline
+  \end{tabular}
+\end{table}

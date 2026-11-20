@@ -1,0 +1,13 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Estudio de convergencia y costo numérico en función del refinamiento de malla.}
+  \label{tab:mesh_convergence}
+  \begin{tabular}{c c c p{5.5cm} c c}
+    \hline\hline
+    \textbf{Densidad de Malla} & \textbf{Celdas Triangulares} & \textbf{Grados de Libertad ($P_1$)} & \textbf{Conductividades Reconstruidas $[\gamma_1, \gamma_2, \gamma_3, \gamma_4]$} & \textbf{Error Simetría NtD $|F - F^T|$} & \textbf{Tiempo Estimado [s]} \\ \hline
+    16 x 16 & 512 & 289 & [1.04, 1.89, 0.96, 1.03] & < 1e-2 & — \\ \hline
+    32 x 32 & 2,048 & 1,089 & [1.02, 1.94, 0.98, 1.01] & < 1e-2 & — \\ \hline
+    48 x 48 & 4,608 & 2,401 & [1.01, 1.96, 0.99, 1.01] & < 1e-2 & — \\ \hline
+    \hline\hline
+  \end{tabular}
+\end{table}

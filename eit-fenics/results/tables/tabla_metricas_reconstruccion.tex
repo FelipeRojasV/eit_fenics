@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Desempeño y error de reconstrucción por subdominio en el Problema 1.1.}
+  \label{tab:reconstruction_metrics}
+  \begin{tabular}{c p{5.5cm} c c c c}
+    \hline\hline
+    \textbf{Subdominio} & \textbf{Cuadrante Geométrico} & \textbf{Conductividad Objetivo $\gamma^*$} & \textbf{Conductividad Estimada $\gamma_{\text{final}}$} & \textbf{Error Absoluto $|\gamma - \gamma^*|$} & \textbf{Error Relativo [%]} \\ \hline
+    $\Omega_1$ & $\Omega_1: [-1, 0] \times [-1, 0]$ (Inferior Izq.) & 1.0000 & 1.0160 & 1.6000e-02 & 1.60% \\ \hline
+    $\Omega_2$ & $\Omega_2: [0, 1] \times [-1, 0]$ (Inferior Der.) & 2.0000 & 2.0010 & 1.0000e-03 & 0.05% \\ \hline
+    $\Omega_3$ & $\Omega_3: [-1, 0] \times [0, 1]$ (Superior Izq.) & 1.0000 & 0.9990 & 1.0000e-03 & 0.10% \\ \hline
+    $\Omega_4$ & $\Omega_4: [0, 1] \times [0, 1]$ (Superior Der.) & 1.0000 & 1.0000 & 0.0000e+00 & 0.00% \\ \hline
+    \hline\hline
+  \end{tabular}
+\end{table}
+% Nota: Residuo final ||b||₂ = 0.0000e+00 | Iteraciones: 0 | Tiempo CPU: 0.00 s
