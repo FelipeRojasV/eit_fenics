@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\caption{Resumen cuantitativo de las variantes controladas del sistema EIT de 4 canales.}
+\label{tab:var_01_resumen}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccccc}
+\toprule
+Variante & Malla & $\alpha$ & $\sigma_{\text{ruido}}$ & Iter. & Error $\gamma$ [\%] & Error NtD [\%] & $\max|F-F^T|$ & Tiempo [s] \\
+\midrule
+V0\_base\_referencia & 32x32 & 1.0e-04 & 0.0e+00 & 5 & 0.00\% & 0.000\% & 2.22e-16 & 0.49 \\
+V1\_medio\_homogeneo & 32x32 & 1.0e-04 & 0.0e+00 & 1 & 0.00\% & 0.000\% & 1.67e-16 & 0.27 \\
+V2\_contraste\_multicuadrante & 32x32 & 1.0e-04 & 0.0e+00 & 5 & 0.00\% & 0.000\% & 2.78e-16 & 0.47 \\
+V3\_anomalia\_aislante\_q4 & 32x32 & 1.0e-04 & 0.0e+00 & 8 & 0.00\% & 0.000\% & 3.33e-16 & 0.61 \\
+V4\_reg\_baja\_ruido & 32x32 & 1.0e-06 & 1.0e-02 & 5 & 2.80\% & 0.891\% & 2.78e-16 & 0.48 \\
+V5\_reg\_alta\_ruido & 32x32 & 1.0e-02 & 1.0e-02 & 10 & 2.80\% & 0.891\% & 2.78e-16 & 0.70 \\
+V6\_malla\_fina & 48x48 & 1.0e-04 & 0.0e+00 & 5 & 0.00\% & 0.000\% & 2.22e-16 & 1.25 \\
+V7\_referencia\_seo\_woo & 32x32 & 1.0e-04 & 0.0e+00 & 9 & N/A & 2.684\% & 4.44e-16 & 0.65 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}
