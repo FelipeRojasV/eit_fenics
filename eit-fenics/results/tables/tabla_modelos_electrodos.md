@@ -1,5 +1,0 @@
-| Modelo de Electrodo | Condición en Frontera ($\partial\Omega$) | Parámetros Requeridos | Ventajas Numéricas | Limitaciones / Singularidades |
-| --- | --- | --- | --- | --- |
-| Point Electrode Model (PEM) | $\sigma \frac{\partial u}{\partial n} = \sum_{\ell} I_\ell \delta(x - x_\ell)$ | Ubicación nodal $x_\ell$ | Implementación trivial en mallas 1D/2D. | Singularidad logarítmica de potencial en 2D ($u \notin H^1$). Violación física. |
-| Shunt Model (Este trabajo) | $\sigma \frac{\partial u}{\partial n} = -\frac{I_j}{|\mathcal{E}_j|}, \quad x \in \mathcal{E}_j$ | Área de contacto $|\mathcal{E}_j|$, ancho $w=0.35$ | Elimina singularidades, $u \in H^1(\Omega)$, integración variacional exacta. | Desprecia la impedancia resistiva de contacto de la interfaz electrodo-tejido. |
-| Complete Electrode Model (CEM) | $u + z_\ell \sigma \frac{\partial u}{\partial n} = U_\ell, \quad \int_{\mathcal{E}_\ell} \sigma \frac{\partial u}{\partial n} ds = I_\ell$ | Impedancia de contacto $z_\ell$, área $|\mathcal{E}_\ell|$ | Modelo con mayor fidelidad experimental física en laboratorio y clínica. | Introduce incógnitas adicionales $U_\ell$ y acoplamiento algebraico-diferencial. |
