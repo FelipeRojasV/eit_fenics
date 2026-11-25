@@ -1,0 +1,15 @@
+# Requisitos para la suite EIT FEniCS Legacy
+#
+# IMPORTANTE: FEniCS Legacy (dolfin 2019.1.0) NO es instalable vía pip.
+# Esta suite NO tiene modo fallback: los resultados deben generarse
+# siempre con FEM real a través de FEniCS.
+#
+# Instalación recomendada (conda):
+#   conda create -n fenics -c conda-forge fenics=2019.1.0 matplotlib scipy numpy pytest
+#   conda activate fenics
+#   pip install -e .
+#
+numpy>=1.20.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+pytest>=7.0.0

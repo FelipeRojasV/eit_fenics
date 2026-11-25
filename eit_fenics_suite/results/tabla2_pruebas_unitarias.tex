@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+\centering
+\caption{Resultados de la verificación automatizada de la biblioteca mediante pytest.}
+\label{tab:pruebas_unitarias}
+\begin{tabular}{lccc}
+\hline
+Archivo de prueba & Caso de prueba & Criterio / Tolerancia & Estado \\
+\hline
+tests/test\_forward.py & test\_ntd\_matrix\_symmetric\_for\_homogeneous\_sigma & atol = 1e-8 & PASSED \\
+tests/test\_forward.py & test\_electrode\_areas\_consistency & rtol = 1e-5 (np.allclose) & PASSED \\
+tests/test\_inversion.py & test\_extract\_symmetrize\_flag & Igualdad exacta & PASSED \\
+tests/test\_inversion.py & test\_least\_squares\_recovers\_noiseless & atol = 1e-10 & PASSED \\
+tests/test\_inversion.py & test\_svd\_returns\_correct\_shapes & Dimensiones exactas & PASSED \\
+tests/test\_reciprocity.py & test\_reciprocity\_holds\_for\_inhomogeneous\_sigma & atol = 1e-6 & PASSED \\
+tests/test\_two\_channel.py & test\_roundtrip\_recovers\_sigma\_epsilon & rtol = 1e-10 & PASSED \\
+Resumen suite & Total: 7 pruebas & Tiempo total: 2.11 s & OK \\
+\hline
+\end{tabular}
+\end{table}
