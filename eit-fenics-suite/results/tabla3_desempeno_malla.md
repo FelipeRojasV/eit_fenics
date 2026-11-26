@@ -1,0 +1,8 @@
+### Desempeño computacional y convergencia geométrica en función de la malla.
+
+| Malla | Celdas | DOFs CG(1) | max|F-F^T| | t_forward [s] | t_jacobiano [s] | t_total [s] |
+| --- | --- | --- | --- | --- | --- | --- |
+| 16 x 16 | 512 | 289 | 3.33e-16 | 0.0165 | 0.0208 | 0.0555 |
+| 32 x 32 | 2048 | 1089 | 4.44e-16 | 0.0266 | 0.0182 | 0.0657 |
+| 64 x 64 | 8192 | 4225 | 7.77e-16 | 0.1170 | 0.0476 | 0.2322 |
+| 128 x 128 | 32768 | 16641 | 3.33e-16 | 0.4547 | 0.1169 | 0.9009 |

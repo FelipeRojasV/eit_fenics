@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eit-fenics-suite"
+version = "0.2.0"
+description = "Suite modular en FEniCS Legacy para Tomografía de Impedancia Eléctrica (EIT)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.7.0",
+    "matplotlib>=3.4.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.0.0"]
+
+[tool.setuptools.packages.find]
+include = ["eit_lib*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
