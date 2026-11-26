@@ -1,9 +1,0 @@
-Archivo de prueba,Caso de prueba,Criterio / Tolerancia,Estado
-tests/test_forward.py,test_ntd_matrix_symmetric_for_homogeneous_sigma,atol = 1e-8,PASSED
-tests/test_forward.py,test_electrode_areas_consistency,rtol = 1e-5 (np.allclose),PASSED
-tests/test_inversion.py,test_extract_symmetrize_flag,Igualdad exacta,PASSED
-tests/test_inversion.py,test_least_squares_recovers_noiseless,atol = 1e-10,PASSED
-tests/test_inversion.py,test_svd_returns_correct_shapes,Dimensiones exactas,PASSED
-tests/test_reciprocity.py,test_reciprocity_holds_for_inhomogeneous_sigma,atol = 1e-6,PASSED
-tests/test_two_channel.py,test_roundtrip_recovers_sigma_epsilon,rtol = 1e-10,PASSED
-Resumen suite,Total: 7 pruebas,Tiempo total: 2.11 s,OK

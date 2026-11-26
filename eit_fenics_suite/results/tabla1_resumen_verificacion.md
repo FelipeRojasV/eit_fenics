@@ -1,9 +1,0 @@
-### Resumen de verificación numérica y errores de reconstrucción (Ejercicios 1 a 5).
-
-| Experimento | Configuración | Métrica clave | Valor obtenido | Observación |
-| --- | --- | --- | --- | --- |
-| Ex 1: Problema 1.1 | Malla 32x32, alpha=1e-3 | Residuo linealizado relativo | 7.5944e-03 | sigma_recon = [3.084, 3.572, 4.261, 3.454] |
-| Ex 2: Reciprocidad | Malla 36x36, sigma(x,y) gaussiana | max|F - F^T| / ||F - F^T||_F | 8.88e-16 / 1.29e-15 | Simetria FEM verificada (N_indep = 6) |
-| Ex 3: Gauss-Newton | Malla 32x32, alpha=1e-4, ruido=0.005 | Error relativo ||sigma_k - sigma*||/||sigma*|| | 1.17% | Convergencia en 6 iteraciones |
-| Ex 4: TSVD | Malla 32x32, r=4, ruido=0.002 | cond(A) / Error relativo en delta_sigma | 7.79 / 0.58% | s_1=1.578e+00, s_4=2.026e-01 |
-| Ex 5: Two-Channel | Malla 32x32, f=50 kHz | Error abs. sigma / Error abs. epsilon | 1.66e-14 / 2.93e-21 | C_Omega=1.7713, phi=-3.18 deg |
