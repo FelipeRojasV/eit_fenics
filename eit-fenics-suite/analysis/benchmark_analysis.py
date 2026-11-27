@@ -140,7 +140,7 @@ def generate_table1_verification_summary():
     rows.append([
         "Ex 3: Gauss-Newton", "Malla 32x32, alpha=1e-4, ruido=0.005",
         "Error relativo sigma", f"{rel_err3 * 100:.2f}%",
-        f"Convergencia en {len(d3['history_res'])} iteraciones",
+        f"{len(d3['history_res'])} iteraciones ejecutadas",
     ])
 
     d4 = load_ex4()
