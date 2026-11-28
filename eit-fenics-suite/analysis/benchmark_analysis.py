@@ -432,7 +432,7 @@ def run_tsvd_truncation_study():
     axes[0].set_xticks(ranks)
     axes[0].set_xlabel("Rango $r$")
     axes[0].set_ylabel("Error relativo medio [%]")
-    axes[0].set_title("Sesgo-varianza TSVD (50 realizaciones)")
+    axes[0].set_title("Error de reconstrucción TSVD (50 realizaciones)")
     axes[0].legend(fontsize=8.5)
     axes[0].grid(True, linestyle="--", alpha=0.5)
 
